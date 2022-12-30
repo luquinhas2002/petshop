@@ -1,0 +1,1436 @@
+/* Parte comum das páginas */
+
+.dark-mode:root {
+    --body-bg: rgb(255, 255, 255);
+    --body-color: black;
+    --link-color-hover: black;
+    --link-rodape-color-hover: rgb(0, 0, 0);
+    --geral: rgb(250, 184, 62);
+    --itens-iniciais-hover: rgb(211, 167, 34);
+    --font-size-h1: 2.2em;
+    --font-size-h3: 1.8em;
+    --underline: 1.5px black solid;
+}
+
+:root {
+    --body-bg: #3a3f44;
+    --body-color: #000000;
+    --link-color-hover: #dee2e6;
+    --link-rodape-color-hover: #dee2e6;
+    --geral: rgb(57, 47, 117);
+    --itens-iniciais-hover: rgb(80, 89, 141);
+    --font-size-h1: 2.2em;
+    --font-size-h3: 1.8em;
+    --underline: 1.5px white solid;
+}
+
+body {
+   background-color: var(--body-bg);
+   font-family: 'Montserrat', sans-serif;;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 28px;
+    left: 200px;
+    top: 20px;
+  }
+
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+.sol {
+    position: relative;
+    height: 25px;
+    left: 190px;
+    top: 33px;
+}
+
+.lua {
+    position: relative;
+    height: 25px;
+    left: 208px;
+    top: 33px;
+}
+
+/* barra laranja */
+.barra-navegacao {
+    background-color: var(--geral);
+    width: 100%;
+    height: 100px;
+}
+
+.links-primarios {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+}
+
+.itens-iniciais {
+    position: relative;
+    display: inline;
+    padding: 0 10px;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.itens-iniciais a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.itens-iniciais a:hover {
+    background-color: var(--itens-iniciais-hover);
+    transition: 0.5s;
+    color: #000000;
+}
+
+/*todo o header  */
+
+.navegacao {
+    position: relative;
+    width: 1600px;
+    height: 200px;
+    margin: 15px auto;
+}
+
+.logo {
+    width: 190px;
+    height: 175px;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
+
+.home {
+    position: relative;
+    padding: 60px;
+    top: 85px;
+    left: 15px;
+    display: hidden;
+}
+
+.barra-pesquisa {
+    position: relative;
+    left: 220px;
+    top: 30px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    width: 55vw;
+    height: 45px;
+    padding-left: 20px;
+    background-color: lightgray;
+    color: black;
+    text-transform:uppercase;
+}
+
+.botao-entrar-cadastrar {
+    width: 125px;
+    height: 45px;
+    color:black;
+    background-color: var(--geral);
+    border-radius: 20px;
+    text-align: right;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    right: 150px;
+    top: 30px;
+    transition: 0.5s;
+}
+
+.botao-entrar-cadastrar:hover{
+    background:var(--geral);
+}
+
+.cadastrar {
+    font-size: 10px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 26px;
+    right: 15px;
+}
+
+.entrar {
+    font-size:15px;
+    top: 8px;
+    right: 15px;
+    text-transform: uppercase;
+    position: absolute;
+}
+
+.pessoa {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    right: 75px;
+    bottom: 2px;
+}
+
+.botao-carrinho{
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    right: 80px;
+    top: 30px;
+    transition: 0.5s;
+    border-radius: 15px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.botao-carrinho:hover{
+    background-color: var(--geral);
+}
+
+.carrinho{
+    height: 35px;
+    width: 35px;
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+
+.botao-favoritos{
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    right: 25px;
+    top: 30px;
+    transition: 0.5s;
+    border-radius: 15px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.botao-favoritos:hover{
+    background-color: var(--geral);
+}
+
+.coracao{
+    height: 35px;
+    width: 35px;
+    position: relative;
+    right: -5px;
+    bottom: -5px;
+}
+
+.links-secundarios {
+    position: relative;
+    width: 1400px;
+    top: 75px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 0 250px;
+    left: 15px;
+    z-index: 1;
+}
+
+.itens-secundarios a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+    user-select: none;
+    padding: 10px;
+}
+
+.itens-secundarios a:hover {
+    background: var(--geral);
+    color: #000000;
+    border-radius: 40px;
+    transition: 500ms;
+}
+
+.produtos-itens {
+    position:absolute;
+    top:43px;
+    left: 305px;
+    background-color: lightgray;
+    max-width: 180px;
+    border-radius: 40px;
+    line-height: 40px;
+    padding: 10px 60px 10px 60px;
+    display:none;
+    z-index: 1;
+}
+
+.produtos-itens a {
+    font-size: 20px;
+}
+
+.itens-secundarios:hover .produtos-itens {
+    display: block;
+}
+
+.produtos-itens ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 1px;
+}
+
+
+
+
+/* PÁGINA PRINCIPAL */
+
+
+
+/* ----------------- */
+.servicos-itens {
+    position:absolute;
+    top:43px;
+    left: 545px;
+    background-color: lightgray;
+    max-width: 160px;
+    border-radius: 40px;
+    line-height: 40px;
+    padding: 10px 60px 10px 60px;
+    display:none;
+}
+
+.servicos-itens a {
+    font-size: 20px;
+    z-index: 1;
+}
+
+.itens-secundarios:hover .servicos-itens {
+    display: block;
+}
+
+.servicos-itens ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 1px;
+}
+
+/* carrosel */
+
+ #carouselExampleControls {
+    z-index: -1;
+}
+
+.carousel-item img{
+    height: 450px;
+    width: 600px;
+}
+
+.carrosel {
+    width: 100%;
+    height: 600px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.carousel-control-next {
+    right: 20%;
+    opacity: 1;
+    filter: invert(1);
+}
+.carousel-control-prev {
+    left: 20%;
+    opacity: 1;
+    filter: invert(1);
+}
+
+/* informações */
+
+.informacoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 250px;
+    height: 150px;
+}
+
+.entrega {
+    background-color: lightgray;
+    height: 70px;
+    width: 290px;
+    top: 100px;
+    border: none;
+    border-radius: 40px;
+    transition: 500ms;
+    background-image: url(imagens/gif/caminhao.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+}
+
+.entrega-icone {
+    position: relative;
+    height: 55px;
+    left: 10px;
+}
+
+.entrega-texto {
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    top: -5px;
+    left: 40px;
+}
+
+#entrega-link {
+    position: relative;
+    font-size: 12px;
+    top: 13px;
+    left: -103px;
+    text-decoration: none;
+    color: black;
+}
+
+#entrega-link:hover {
+    text-decoration: underline;
+}
+
+.entrega:hover {
+    background-image: url(imagens/gif/caminhao.gif);
+    background-size: 68px;
+}
+
+/* ----------- */
+
+.pagamento {
+    background-color: lightgray;
+    height: 70px;
+    width: 290px;
+    top: 100px;
+    border: none;
+    border-radius: 40px;
+    transition: 500ms;
+    background-image: url(imagens/gif/pagamento.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+}
+
+.pagamento-icone {
+    position: relative;
+    top: 10px;
+    height: 45px;
+    left: 5px;
+}
+
+.pagamento-texto {
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    left: 75px;
+    top: -7px;
+}
+
+#pagamento-link {
+    position: relative;
+    font-size: 12px;
+    top: 10px;
+    left: -117px;
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+}
+
+#pagamento-link:hover {
+    text-decoration: underline;
+}
+
+.pagamento:hover {
+    background-image: url(imagens/gif/pagamento.gif);
+    background-size: 70px;
+    background-position: 7%;
+}
+
+/* ----------- */
+
+.tele {
+    background-color: lightgray;
+    height: 70px;
+    width: 290px;
+    top: 100px;
+    border: none;
+    border-radius: 40px;
+    transition: 500ms;
+    background-image: url(imagens/gif/cao.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+}
+
+.tele-icone {
+    position: relative;
+    height: 55px;
+    left: 20px;
+}
+
+.tele-texto {
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    top: -5px;
+    left: 60px;
+}
+
+#tele-link {
+    position: relative;
+    font-size: 12px;
+    top: 12px;
+    left: -17px;
+    text-decoration: none;
+    color: black;
+}
+
+#tele-link:hover {
+    text-decoration: underline;
+}
+
+.tele:hover {
+    background-image: url(imagens/gif/cao.gif);
+    background-size: 70px;
+    background-position: 7%;
+}
+/* ----------- */
+.saude {
+    background-color: lightgray;
+    height: 70px;
+    width: 290px;
+    top: 100px;
+    border: none;
+    border-radius: 40px;
+    transition: 500ms;
+    background-image: url(imagens/gif/saude.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+}
+
+.saude-icone {
+    position: relative;
+    height: 55px;
+    left: 5px;
+}
+
+.saude-texto {
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    top: -5px;
+    left: 10px;
+}
+
+#saude-link {
+    position: relative;
+    font-size: 12px;
+    top: 13px;
+    left: -85px;
+    text-decoration: none;
+    color: black;
+}
+
+#saude-link:hover {
+    text-decoration: underline;
+}
+
+.saude:hover {
+    background-image: url(imagens/gif/saude.gif);
+    background-size: 70px;
+    background-position: 7%;
+}
+
+/* produtos recomendados */
+
+.produtos-recomendados h1 {
+    position: relative;
+    left: 280px;
+    height: 100px;
+    max-width: 700px;
+    font-size: var(--font-size-h1);
+    color: #000000;
+}
+
+.fotos__produtos-recomendados {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 200px;
+    height: 300px;
+}
+
+.topicos a:hover {
+    color: black;
+    border-bottom: 1.5px solid black;
+}
+
+/* ------------- */
+
+.racao {
+    background-image: url(imagens/produtos-recomendados/racao.jpg);
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    background-size: 250px 200px;
+    background-repeat: no-repeat;
+    transition: 500ms;
+}
+
+.escova {
+    background-image: url(imagens/produtos-recomendados/escova.jpg);
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    background-size: 250px 200px;
+    background-repeat: no-repeat;
+    transition: 500ms;
+}
+
+.perfume {
+    background-image: url(imagens/produtos-recomendados/perfume.jpg);
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    background-size: 250px 200px;
+    background-repeat: no-repeat;
+    transition: 500ms;
+}
+
+/* ------------- */
+.shampoo {
+    background-image: url(imagens/produtos-recomendados/shampoo.jpg);
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    background-size: 250px 200px;
+    background-repeat: no-repeat;
+    transition: 500ms;
+}
+
+/* ------------- */
+.petisco {
+    background-image: url(imagens/produtos-recomendados/petisco.jpg);
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    background-size: 250px 200px;
+    background-repeat: no-repeat;
+    transition: 500ms;
+}
+
+.racao:hover, .escova:hover, .perfume:hover, .shampoo:hover, .petisco:hover {
+    transform: scale(1.1);
+}
+
+ .racao a, .escova a, .perfume a, .shampoo a, .petisco a {
+   visibility: hidden;
+   text-decoration: none;
+   color: #000000;
+   font-size: 2em;
+   transition: 200ms;
+   position: relative;
+   top: 80px;
+}
+
+.racao:hover a, .escova:hover a, .perfume:hover a, .shampoo:hover a, .petisco:hover a {
+    visibility: visible;
+}
+
+.caixa-invisivel__racao, .caixa-invisivel__escova, .caixa-invisivel__perfume, .caixa-invisivel__shampoo, .caixa-invisivel__petisco {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    left: -6px;
+    top: -1px;
+    transition: 500ms;
+}
+
+ .caixa-invisivel__racao:hover, .caixa-invisivel__escova:hover, .caixa-invisivel__perfume:hover, .caixa-invisivel__shampoo:hover, .caixa-invisivel__petisco:hover {
+    background-color: rgba(219, 226, 219, 0.541);
+}
+
+/* mais procurados-cachorros */
+
+.mais-procurados-cachorros h1 {
+    position: relative;
+    left: 280px;
+    height: 100px;
+    max-width: 700px;
+    font-size: var(--font-size-h1);
+    color: #000000;
+}
+
+.fotos__mais-procurados-cachorros {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 200px;
+    height: 300px;
+}
+
+/* ------------- */
+
+.coleira {
+    background-image: url(imagens/mais-procurados-cachorros/coleira.jpg);
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    background-size: 250px 200px;
+    background-repeat: no-repeat;
+    transition: 500ms;
+}
+
+.brinquedo {
+    background-image: url(imagens/mais-procurados-cachorros/brinquedo.png);
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    background-size: 250px 200px;
+    background-repeat: no-repeat;
+    transition: 500ms;
+}
+
+.roupa {
+    background-image: url(imagens/mais-procurados-cachorros/roupa.jpg);
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    background-size: 250px 200px;
+    background-repeat: no-repeat;
+    transition: 500ms;
+}
+
+/* ------------- */
+.casinha {
+    background-image: url(imagens/mais-procurados-cachorros/casinha.jpg);
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    background-size: 250px 200px;
+    background-repeat: no-repeat;
+    transition: 500ms;
+}
+
+/* ------------- */
+.remedio {
+    background-image: url(imagens/mais-procurados-cachorros/remedio.jpg);
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    background-size: 250px 200px;
+    background-repeat: no-repeat;
+    transition: 500ms;
+}
+
+.coleira:hover, .brinquedo:hover, .roupa:hover, .casinha:hover, .remedio:hover {
+    transform: scale(1.1);
+}
+
+ .coleira a, .brinquedo a, .roupa a, .casinha a, .remedio a {
+   visibility: hidden;
+   text-decoration: none;
+   color: #000000;
+   font-size: 2em;
+   transition: 200ms;
+   position: relative;
+   top: 80px;
+}
+
+.coleira:hover a, .brinquedo:hover a, .roupa:hover a, .casinha:hover a, .remedio:hover a {
+    visibility: visible;
+}
+
+.caixa-invisivel__coleira, .caixa-invisivel__brinquedo, .caixa-invisivel__roupa, .caixa-invisivel__casinha, .caixa-invisivel__remedio {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    left: -6px;
+    top: -1px;
+    transition: 500ms;
+}
+
+ .caixa-invisivel__coleira:hover, .caixa-invisivel__brinquedo:hover, .caixa-invisivel__roupa:hover, .caixa-invisivel__casinha:hover, .caixa-invisivel__remedio:hover {
+    background-color: rgba(219, 226, 219, 0.541);
+}
+
+/* mais procurados-gatos*/
+
+.mais-procurados-gatos h1 {
+    position: relative;
+    left: 280px;
+    height: 100px;
+    max-width: 700px;
+    font-size: var(--font-size-h1);
+    color: #000000;
+}
+
+.fotos__mais-procurados-gatos {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 200px;
+    height: 300px;
+}
+
+/* ------------- */
+
+.cortador-unhas {
+    background-image: url(imagens/mais-procurados-gatos/cortador-unhas.png);
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    background-size: 250px 200px;
+    background-repeat: no-repeat;
+    transition: 500ms;
+}
+
+.caixa-areia {
+    background-image: url(imagens/mais-procurados-gatos/caixa-areia.jpg);
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    background-size: 250px 200px;
+    background-repeat: no-repeat;
+    transition: 500ms;
+}
+
+.caminha {
+    background-image: url(imagens/mais-procurados-gatos/caminha.jpg);
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    background-size: 250px 200px;
+    background-repeat: no-repeat;
+    transition: 500ms;
+}
+
+/* ------------- */
+.arranhador {
+    background-image: url(imagens/mais-procurados-gatos/arranhador.jpg);
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    background-size: 250px 200px;
+    background-repeat: no-repeat;
+    transition: 500ms;
+}
+
+/* ------------- */
+.caixa-transporte {
+    background-image: url(imagens/mais-procurados-gatos/caixa-transporte.jpg);
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    background-size: 250px 200px;
+    background-repeat: no-repeat;
+    transition: 500ms;
+}
+
+.cortador-unhas:hover, .caixa-areia:hover, .caminha:hover, .arranhador:hover, .caixa-transporte:hover {
+    transform: scale(1.1);
+}
+
+ .cortador-unhas a, .caminha a, .arranhador a{
+   visibility: hidden;
+   text-decoration: none;
+   color: #000000;
+   font-size: 2em;
+   transition: 200ms;
+   position: relative;
+   top: 80px;
+}
+
+.caixa-areia a, .caixa-transporte a {
+   visibility: hidden;
+   text-decoration: none;
+   color: #000000;
+   font-size: 2em;
+   transition: 200ms;
+   position: relative;
+   top: 50px;
+}
+
+.cortador-unhas:hover a, .caixa-areia:hover a, .caminha:hover a, .arranhador:hover a, .caixa-transporte:hover a {
+    visibility: visible;
+}
+
+.caixa-invisivel__cortador-unhas, .caixa-invisivel__caixa-areia, .caixa-invisivel__caminha, .caixa-invisivel__arranhador, .caixa-invisivel__caixa-transporte {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    left: -6px;
+    top: -1px;
+    transition: 500ms;
+}
+
+ .caixa-invisivel__cortador-unhas:hover, .caixa-invisivel__caixa-areia:hover, .caixa-invisivel__caminha:hover, .caixa-invisivel__arranhador:hover, .caixa-invisivel__caixa-transporte:hover {
+    background-color: rgba(219, 226, 219, 0.541);
+}
+
+/* mais recomendados-passaros */
+
+.mais-procurados-passaros h1 {
+    position: relative;
+    left: 280px;
+    height: 100px;
+    max-width: 700px;
+    font-size: var(--font-size-h1);
+    color: #000000;
+}
+
+.fotos__mais-procurados-passaros {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 200px;
+    height: 300px;
+}
+
+/* ------------- */
+
+.gaiola {
+    background-image: url(imagens/mais-procurados-passaros/gaiola.jpg);
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    background-size: 250px 200px;
+    background-repeat: no-repeat;
+    transition: 500ms;
+}
+
+.ninho {
+    background-image: url(imagens/mais-procurados-passaros/ninho.jpg);
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    background-size: 250px 200px;
+    background-repeat: no-repeat;
+    transition: 500ms;
+}
+
+.bebedouro {
+    background-image: url(imagens/mais-procurados-passaros/bebedouro.jpg);
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    background-size: 250px 200px;
+    background-repeat: no-repeat;
+    transition: 500ms;
+}
+
+/* ------------- */
+.brinquedo-passaro {
+    background-image: url(imagens/mais-procurados-passaros/brinquedo-passaro.jpg);
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    background-size: 250px 200px;
+    background-repeat: no-repeat;
+    transition: 500ms;
+}
+
+/* ------------- */
+.racao-passaro {
+    background-image: url(imagens/mais-procurados-passaros/racao-passaro.jpg);
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    background-size: 250px 200px;
+    background-repeat: no-repeat;
+    transition: 500ms;
+}
+
+.gaiola:hover, .ninho:hover, .bebedouro:hover, .brinquedo-passaro:hover, .racao-passaro:hover {
+    transform: scale(1.1);
+}
+
+ .gaiola a, .ninho a, .bebedouro a, .brinquedo-passaro a, .racao-passaro a {
+   visibility: hidden;
+   text-decoration: none;
+   color: #000000;
+   font-size: 2em;
+   transition: 200ms;
+   position: relative;
+   top: 80px;
+}
+
+.gaiola:hover a, .ninho:hover a, .bebedouro:hover a, .brinquedo-passaro:hover a, .racao-passaro:hover a {
+    visibility: visible;
+}
+
+.caixa-invisivel__gaiola, .caixa-invisivel__ninho, .caixa-invisivel__bebedouro, .caixa-invisivel__brinquedo-passaro, .caixa-invisivel__racao-passaro {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    left: -6px;
+    top: -1px;
+    transition: 500ms;
+}
+
+ .caixa-invisivel__gaiola:hover, .caixa-invisivel__ninho:hover, .caixa-invisivel__bebedouro:hover, .caixa-invisivel__brinquedo-passaro:hover, .caixa-invisivel__racao-passaro:hover {
+    background-color: rgba(219, 226, 219, 0.541);
+}
+
+
+/* CONTATO */
+
+.contato {
+    padding-left: 400px;
+    height: 1100px;
+    width: 780px;
+    z-index: -1;
+}
+
+.titulo-cadastro {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    left: -40px;
+    position: relative;
+}
+
+.formulario-contato hr{
+    position: relative;
+    width: 940px;
+    bottom: 45px;
+    left: -40px;
+}
+
+.icone-cadastro {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    left: -45px;
+    top: 60px;
+}
+
+.titulo-dados-pessoais {
+    font-weight: bold;
+    font-size: 23px;
+    margin-bottom: 25px;
+}
+
+.dados-pessoais {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 35px;
+    row-gap: 35px;
+    margin-bottom: 50px;
+}
+
+.input-contato {
+    padding: 20px 25px;
+    width: 23vw;
+    border: none;
+    border-bottom: var(--geral) 3px solid;
+}
+
+.icone-endereco {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    left: -45px;
+    top: 28px;
+}
+
+.titulo-endereco {
+    font-weight: bold;
+    font-size: 23px;
+    margin-bottom: 25px;
+}
+
+.input-endereco {
+    padding: 20px 25px;
+    border: none;
+    border-bottom: var(--geral) 3px solid;
+}
+
+.endereco {
+    display: grid;
+    column-gap: 35px; 
+    row-gap: 35px;
+    grid-template-columns: 400px 110px 70px 200px;
+    grid-template-rows: 70px 70px 70px 70px; 
+}
+
+#cep {
+    grid-column: 1/5;
+}
+
+#rua {
+    grid-column: 1/4;
+}
+
+#numero-endereco {
+    grid-column: 4/5;
+}
+
+#estado {
+    grid-column: 1/3;
+}
+
+#cidade {
+    grid-column: 3/5;
+}
+
+#bairro {
+    grid-column: 1/5;
+}
+
+.input-contato:focus, .input-endereco:focus {
+    box-shadow: 0;
+    outline: 0;
+}
+
+.enviar {
+    height: 50px;
+    width: 250px;
+    position: relative;
+    top: 45px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--geral);
+    font-size: 20px;
+    font-weight: bolder;
+    transition: 0.5s;
+}
+
+.enviar:hover {
+    background-color: var(--itens-iniciais-hover);
+    transform: scale(1.05);
+}
+
+
+/* SOBRE */
+
+.sobre {
+    height: 900px;
+    width: 1300px;
+    padding-left: 400px;
+    font-size: 25px;
+}
+
+.sobre h1 {
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 30px;
+    position: relative;
+    left: -40px;
+}
+
+.sobre hr {
+    position: relative;
+    left: -40px;
+    width: 940px;
+}
+
+#paragrafo-sobre {
+    padding: 1.5em 0;
+}
+
+.sobre p {
+    line-height: 1.6em;
+}
+
+.mapa {
+    position: relative;
+    top: 25px;
+}
+
+.sobre address {
+    position: relative;
+    top: 70px;
+    text-align: center;
+}
+
+
+/* RODAPÉ */
+
+
+footer {
+    background-color: var(--geral);
+}
+
+footer a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5em;
+}
+
+footer a:hover {
+    color: var(--link-rodape-color-hover);
+    border-bottom: var(--underline);
+}
+
+.rodape {
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   height: 200px;
+   padding: 0 350px;
+   top: 50px;
+   left: -190px;
+}
+
+.institucional {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 0;
+    line-height: 45px;
+}
+
+.institucional h1, .atendimento h1, .politica h1 {
+    font-size: var(--font-size-h1);
+    color: #000000;
+}
+
+.atendimento {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 0;
+    line-height: 45px;
+}
+
+.politica {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 0;
+    line-height: 45px;
+}
+
+.copyright {
+    position: relative;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    bottom: 15px;
+    font-weight: bold;
+}
+
+.app__redes-sociais {
+    position: relative;
+    background-color: whitesmoke;
+    max-width: 21vw;
+    height: 330px;
+    margin-left: 1350px;
+    bottom: 100px;
+    border-radius: 70px;
+}
+
+.app__redes-sociais h3 {
+    position: relative;
+    text-align: center;
+    top: 15px;
+    font-size: var(--font-size-h3);
+}
+
+.qr-code {
+    position: relative;
+    height: 120px;
+    left: 50px;
+    top: 40px;
+}
+
+.app {
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    bottom: 125px;
+    margin-top: 35px;
+    gap: 10px;
+    right: 40px;
+}
+
+.appStore {
+    background-image: url(imagens/redes-sociais/apple.png);
+    height: 65px;
+    width: 170px;
+    background-repeat: no-repeat;
+    background-size: 185px 72px;
+    background-position: center;
+    border-radius: 15px;
+    position: relative;
+}
+
+
+.googlePlay {
+    background-image: url(imagens/redes-sociais/googlePlay.png);
+    height: 65px;
+    width: 170px;
+    background-repeat: no-repeat;
+    background-size: 168px 83px;
+    background-position: center;
+    border-radius: 15px;
+    position: relative;
+}
+
+.redesSociais {
+    position: relative;
+    bottom: 130px;
+}
+
+.redesSociais h3 {
+    position: relative;
+    text-align: center;
+    height: 50px;
+    font-size: var(--font-size-h3);
+}
+
+.facebook {
+    background-image: url(imagens/redes-sociais/facebook.png);
+    background-repeat: none;
+    background-size: cover;
+}
+
+.wpp {
+    background-image: url(imagens/redes-sociais/wpp.png);
+    background-repeat: none;
+    background-size: cover;
+}
+
+.instagram {
+    background-image: url(imagens/redes-sociais/instagram.png);
+    background-repeat: none;
+    background-size: cover;
+}
+
+.twitter {
+    background-image: url(imagens/redes-sociais/twitter.png);
+    background-repeat: none;
+    background-size: cover;
+}
+
+.redesSociais button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+}
+
+.botoes__redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
