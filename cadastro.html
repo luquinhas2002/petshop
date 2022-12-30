@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="dark-mode">
+<head>
+    <meta charset="UTF-8">
+    <title>Bolona Pet-Shop</title>
+    <link rel="icon" href="imagens/logo-original.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="reset.css"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <header>
+            <div class="barra-navegacao">
+                <img src="imagens/icones/sol.png" class="sol">
+                <label class="switch">
+                    <input type="checkbox" id="change">
+                    <span class="slider round"></span>
+                </label>
+                <img src="imagens/icones/lua.png" class="lua">
+                <nav>
+                    <ul class="links-primarios">
+                        <li class = "itens-iniciais"><a href="acompanhe-seu-pedido.html">Acompanhe seu pedido</a></li>
+                        <li class = "itens-iniciais"><a href="atendimento.html">Atendimento</a></li>
+                        <li class = "itens-iniciais"><a href="unidades.html">Unidades</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="navegacao">
+                <div>
+                    <img class="logo" src="imagens/logo.png">
+                    <a class="home" href=petshop.html></a>
+                </div>
+                <div class="pesquisa-navegacao">
+                    <input type="text" class= "barra-pesquisa" placeholder="Pesquisar">
+                </div>
+                <div>
+                    <nav>
+                        <div class="links-secundarios">
+                            <div class="itens-secundarios"><a href="produtos.html" class="teste">Produtos</a>
+                                <div class="produtos-itens">
+                                    <ul>
+                                        <li><a href="#" class="item">Escova</a></li>
+                                        <li><a href="#" class="item">Pente</a></li>
+                                        <li><a href="#" class="item">Perfume</a></li>
+                                        <li><a href="#" class="item">Coleira</a></li>
+                                        <li><a href="#" class="item">Casinha</a></li>
+                                        <li><a href="#" class="item">Roupas</a></li>
+                                        <li><a href="#" class="item">Acessórios</a></li>
+                                        <li><a href="#" class="item">Ração</a></li>
+                                        <li><a href="#" class="item">Remédios</a></li>
+                                        <li><a href="#" class="item">Brinquedos</a></li>
+                                    </ul>
+                                </div> 
+                            </div>
+                            <div class="itens-secundarios"><a href="servicos.html">Serviços</a>
+                                <div class="servicos-itens">
+                                    <ul>
+                                        <li><a href="#" class="servicos-links">Banho</a></li>
+                                        <li><a href="#" class="servicos-links">Tosa</a></li>
+                                        <li><a href="#" class="servicos-links">Castração</a></li>
+                                        <li><a href="#" class="servicos-links">Consulta</a></li>
+                                        <li><a href="#" class="servicos-links">Vacinas</a></li>
+                                        <li><a href="#" class="servicos-links">Passeios</a></li>
+                                        <li><a href="#" class="servicos-links">Hospedagem</a></li>
+                                        <li><a href="#" class="servicos-links">Creche</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="itens-secundarios"><a href="contato.html">Contato</a></div>
+                            <div class="itens-secundarios"><a href="sobre.html">Sobre</a></div>
+                        </div>
+                    </nav>
+                    <div class="botao-entrar-cadastrar">
+                        <img class="pessoa" src="imagens/icones/pessoa.png">
+                        <a href="entrar.html"  class="entrar">Entrar</a>
+                        <a href="cadastro.html"  class="cadastrar">Cadastrar</a>
+                    </div>
+                    <div class="botao-carrinho">
+                        <img class="carrinho" src="imagens/icones/carrinho-de-compras.png">
+                    </div>
+                    <div class="botao-favoritos">
+                        <img class="coracao" src="imagens/icones/coracao.png">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="contato">
+            <h1 class="titulo-cadastro">Cadastre-se</h1>
+            <form class="formulario-contato">
+                <img class="icone-cadastro" src="imagens/icones/icone-cadastro.png">
+                <hr><h1 class="titulo-dados-pessoais">Dados pessoais</h1>
+                <div class="dados-pessoais">
+                    <input type="text" id="nome" class="input-contato" placeholder="*Nome" required>
+                    <input type="text" id="sobrenome" class="input-contato" placeholder="*Sobrenome" required>
+                    <input type="email" id="email" class="input-contato" placeholder="*E-mail" required>
+                    <input type="number" id="cpf" class="input-contato" placeholder="*CPF" required>
+                    <input type="tel" id="telefone" class="input-contato" placeholder="*Telefone" required>
+                </div>
+                <img class="icone-endereco" src="imagens/icones/casa.png">
+                <h1 class="titulo-endereco">Endereço</h1>
+                <div class="endereco">
+                    <input type="number" id="cep" class="input-endereco" placeholder="*CEP" required>
+                    <input type="text" id="rua" class="input-endereco" placeholder="*Rua" required>
+                    <input type="number" id="numero-endereco" class="input-endereco" placeholder="*Número">
+                    <input type="text" id="estado" class="input-endereco" placeholder="*Estado" required>
+                    <input type="text" id="cidade" class="input-endereco" placeholder="*Cidade" required>
+                    <input type="text" id="bairro" class="input-endereco" placeholder="*Bairro" required>
+                </div>
+                <div class="senha">
+                    <input type="text" id="senha" class="input-senha" placeholder="*Senha" required>
+                    <input type="text" id="senha-confirma" class="input-senha" placeholder="*Confirme senha" required>
+                </div>
+                <input type="submit" value="Enviar" class="enviar">
+            </form>
+        </main>
+        <footer>
+            <div class="rodape">
+                <div class="institucional">
+                    <h1>Insticional</h1>
+                    <a href="#">Sobre Nós</a>
+                    <a href="#">Trabalhe Conosco</a>
+                    <a href="#">Termos E Condições de Uso</a>
+                    <a href="#">Central De Ética E Conduta</a>
+                </div>
+                <div class="atendimento">
+                    <h1>Atendimento</h1>
+                    <a href="#">Meus Pedidos</a>
+                    <a href="#">Meu Cadastro</a>
+                    <a href="#">Atendimento Para Clientes</a>
+                    <a href="#">Central De Atendimento</a>
+                    <a href="#">Dúvidas Gerais</a>
+                    <a href="#">Ouvidoria</a>
+                    <a href="#">Fale Conosco</a>
+                </div>
+                <div class="politica">
+                    <h1>Política</h1>
+                    <a href="#">Política De Privacidade</a>
+                    <a href="#">Entrega e Frete</a>
+                    <a href="#">Pagamento e Reembolso</a>
+                    <a href="#">Trocas e Devoluções</a>
+                </div>
+                </div>
+                <div class="app__redes-sociais">
+                    <h3>Baixe nosso App</h3>   
+                    <img src="imagens/redes-sociais/qr-code.jpg" class="qr-code">
+                    <div class="app">
+                        <button class="appStore">
+                            
+                        </button>
+                        <button class="googlePlay">
+    
+                        </button>
+                    </div>
+                    <div class="redesSociais">
+                        <h3>Redes Sociais</h3>
+                        <div class="botoes__redes-sociais">
+                            <button class="facebook">
+    
+                            </button>
+                            <button class="wpp">
+    
+                            </button>
+                            <button class="instagram">
+    
+                            </button>
+                            <button class="twitter">
+    
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            <p class="copyright"> © Copyright Pet Shop Bolona - 2022</p>
+        </footer> 
+    <script src="petshop.js"></script>   
+</body>
+</html>
