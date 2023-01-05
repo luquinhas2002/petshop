@@ -298,6 +298,10 @@ body {
     z-index: 1;
 }
 
+.links-secundarios:hover {
+    z-index: 1;
+}
+
 .itens-secundarios a {
     text-transform: uppercase;
     color: #000000;
@@ -324,8 +328,7 @@ body {
     border-radius: 40px;
     line-height: 40px;
     padding: 10px 60px 10px 60px;
-    display:none;
-    z-index: 1;
+    display: none;
 }
 
 .produtos-itens a {
@@ -355,9 +358,9 @@ body {
 .servicos-itens {
     position:absolute;
     top:43px;
-    left: 545px;
+    left: 538px;
     background-color: lightgray;
-    max-width: 160px;
+    max-width: 180px;
     border-radius: 40px;
     line-height: 40px;
     padding: 10px 60px 10px 60px;
@@ -615,7 +618,7 @@ body {
 
 /* produtos recomendados */
 
-.produtos-recomendados h1 {
+.produtos-recomendados h1, .mais-procurados-cachorros h1, .mais-procurados-gatos h1, .mais-procurados-passaros h1 {
     position: relative;
     left: 280px;
     height: 100px;
@@ -624,7 +627,7 @@ body {
     color: #000000;
 }
 
-.fotos__produtos-recomendados {
+.fotos__produtos-recomendados, .fotos__mais-procurados-cachorros, .fotos__mais-procurados-gatos, .fotos__mais-procurados-passaros {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -636,6 +639,56 @@ body {
 .topicos a:hover {
     color: black;
     border-bottom: 1.5px solid black;
+}
+
+/* ------------- */
+
+
+.racao:hover, .escova:hover, .perfume:hover, .shampoo:hover, .petisco:hover, .coleira:hover, .brinquedo:hover, .roupa:hover, .casinha:hover, .remedio:hover, .cortador-unhas:hover, .caixa-areia:hover, .caminha:hover, .arranhador:hover, .caixa-transporte:hover, .gaiola:hover, .ninho:hover, .bebedouro:hover, .brinquedo-passaro:hover, .racao-passaro:hover {
+    transform: scale(1.1);
+}
+
+ .racao a, .escova a, .perfume a, .shampoo a, .petisco a, .coleira a, .brinquedo a, .roupa a, .casinha a, .remedio a, .cortador-unhas a, .caminha a, .arranhador a, .gaiola a, .ninho a, .bebedouro a, .brinquedo-passaro a, .racao-passaro a {
+   visibility: hidden;
+   text-decoration: none;
+   color: #000000;
+   font-size: 2em;
+   transition: 200ms;
+   position: relative;
+   top: 80px;
+}
+
+.caixa-areia a, .caixa-transporte a {
+    visibility: hidden;
+    text-decoration: none;
+    color: #000000;
+    font-size: 2em;
+    transition: 200ms;
+    position: relative;
+    top: 50px;
+ } 
+
+ .arranhador a {
+    font-size: 1.7em;
+ }
+
+.racao:hover a, .escova:hover a, .perfume:hover a, .shampoo:hover a, .petisco:hover a, .coleira:hover a, .brinquedo:hover a, .roupa:hover a, .casinha:hover a, .remedio:hover a, .cortador-unhas:hover a, .caixa-areia:hover a, .caminha:hover a, .arranhador:hover a, .caixa-transporte:hover a, .gaiola:hover a, .ninho:hover a, .bebedouro:hover a, .brinquedo-passaro:hover a, .racao-passaro:hover a {
+    visibility: visible;
+}
+
+.caixa-invisivel__racao, .caixa-invisivel__escova, .caixa-invisivel__perfume, .caixa-invisivel__shampoo, .caixa-invisivel__petisco, .caixa-invisivel__coleira, .caixa-invisivel__brinquedo, .caixa-invisivel__roupa, .caixa-invisivel__casinha, .caixa-invisivel__remedio, .caixa-invisivel__cortador-unhas, .caixa-invisivel__caixa-areia, .caixa-invisivel__caminha, .caixa-invisivel__arranhador, .caixa-invisivel__caixa-transporte, .caixa-invisivel__gaiola, .caixa-invisivel__ninho, .caixa-invisivel__bebedouro, .caixa-invisivel__brinquedo-passaro, .caixa-invisivel__racao-passaro {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    left: -6px;
+    top: -1px;
+    transition: 500ms;
+}
+
+ .caixa-invisivel__racao:hover, .caixa-invisivel__escova:hover, .caixa-invisivel__perfume:hover, .caixa-invisivel__shampoo:hover, .caixa-invisivel__petisco:hover, .caixa-invisivel__coleira:hover, .caixa-invisivel__brinquedo:hover, .caixa-invisivel__roupa:hover, .caixa-invisivel__casinha:hover, .caixa-invisivel__remedio:hover, .caixa-invisivel__cortador-unhas:hover, .caixa-invisivel__caixa-areia:hover, .caixa-invisivel__caminha:hover, .caixa-invisivel__arranhador:hover, .caixa-invisivel__caixa-transporte:hover, .caixa-invisivel__gaiola:hover, .caixa-invisivel__ninho:hover, .caixa-invisivel__bebedouro:hover, .caixa-invisivel__brinquedo-passaro:hover, .caixa-invisivel__racao-passaro:hover {
+    background-color: rgba(219, 226, 219, 0.541);
 }
 
 /* ------------- */
@@ -697,61 +750,6 @@ body {
     transition: 500ms;
 }
 
-.racao:hover, .escova:hover, .perfume:hover, .shampoo:hover, .petisco:hover {
-    transform: scale(1.1);
-}
-
- .racao a, .escova a, .perfume a, .shampoo a, .petisco a {
-   visibility: hidden;
-   text-decoration: none;
-   color: #000000;
-   font-size: 2em;
-   transition: 200ms;
-   position: relative;
-   top: 80px;
-}
-
-.racao:hover a, .escova:hover a, .perfume:hover a, .shampoo:hover a, .petisco:hover a {
-    visibility: visible;
-}
-
-.caixa-invisivel__racao, .caixa-invisivel__escova, .caixa-invisivel__perfume, .caixa-invisivel__shampoo, .caixa-invisivel__petisco {
-    position: relative;
-    height: 200px;
-    width: 200px;
-    border-radius: 25px;
-    border: none;
-    left: -6px;
-    top: -1px;
-    transition: 500ms;
-}
-
- .caixa-invisivel__racao:hover, .caixa-invisivel__escova:hover, .caixa-invisivel__perfume:hover, .caixa-invisivel__shampoo:hover, .caixa-invisivel__petisco:hover {
-    background-color: rgba(219, 226, 219, 0.541);
-}
-
-/* mais procurados-cachorros */
-
-.mais-procurados-cachorros h1 {
-    position: relative;
-    left: 280px;
-    height: 100px;
-    max-width: 700px;
-    font-size: var(--font-size-h1);
-    color: #000000;
-}
-
-.fotos__mais-procurados-cachorros {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 0 200px;
-    height: 300px;
-}
-
-/* ------------- */
-
 .coleira {
     background-image: url(imagens/mais-procurados-cachorros/coleira.jpg);
     height: 200px;
@@ -807,59 +805,6 @@ body {
     background-size: 250px 200px;
     background-repeat: no-repeat;
     transition: 500ms;
-}
-
-.coleira:hover, .brinquedo:hover, .roupa:hover, .casinha:hover, .remedio:hover {
-    transform: scale(1.1);
-}
-
- .coleira a, .brinquedo a, .roupa a, .casinha a, .remedio a {
-   visibility: hidden;
-   text-decoration: none;
-   color: #000000;
-   font-size: 2em;
-   transition: 200ms;
-   position: relative;
-   top: 80px;
-}
-
-.coleira:hover a, .brinquedo:hover a, .roupa:hover a, .casinha:hover a, .remedio:hover a {
-    visibility: visible;
-}
-
-.caixa-invisivel__coleira, .caixa-invisivel__brinquedo, .caixa-invisivel__roupa, .caixa-invisivel__casinha, .caixa-invisivel__remedio {
-    position: relative;
-    height: 200px;
-    width: 200px;
-    border-radius: 25px;
-    border: none;
-    left: -6px;
-    top: -1px;
-    transition: 500ms;
-}
-
- .caixa-invisivel__coleira:hover, .caixa-invisivel__brinquedo:hover, .caixa-invisivel__roupa:hover, .caixa-invisivel__casinha:hover, .caixa-invisivel__remedio:hover {
-    background-color: rgba(219, 226, 219, 0.541);
-}
-
-/* mais procurados-gatos*/
-
-.mais-procurados-gatos h1 {
-    position: relative;
-    left: 280px;
-    height: 100px;
-    max-width: 700px;
-    font-size: var(--font-size-h1);
-    color: #000000;
-}
-
-.fotos__mais-procurados-gatos {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 0 200px;
-    height: 300px;
 }
 
 /* ------------- */
@@ -921,69 +866,6 @@ body {
     transition: 500ms;
 }
 
-.cortador-unhas:hover, .caixa-areia:hover, .caminha:hover, .arranhador:hover, .caixa-transporte:hover {
-    transform: scale(1.1);
-}
-
- .cortador-unhas a, .caminha a, .arranhador a{
-   visibility: hidden;
-   text-decoration: none;
-   color: #000000;
-   font-size: 2em;
-   transition: 200ms;
-   position: relative;
-   top: 80px;
-}
-
-.caixa-areia a, .caixa-transporte a {
-   visibility: hidden;
-   text-decoration: none;
-   color: #000000;
-   font-size: 2em;
-   transition: 200ms;
-   position: relative;
-   top: 50px;
-}
-
-.cortador-unhas:hover a, .caixa-areia:hover a, .caminha:hover a, .arranhador:hover a, .caixa-transporte:hover a {
-    visibility: visible;
-}
-
-.caixa-invisivel__cortador-unhas, .caixa-invisivel__caixa-areia, .caixa-invisivel__caminha, .caixa-invisivel__arranhador, .caixa-invisivel__caixa-transporte {
-    position: relative;
-    height: 200px;
-    width: 200px;
-    border-radius: 25px;
-    border: none;
-    left: -6px;
-    top: -1px;
-    transition: 500ms;
-}
-
- .caixa-invisivel__cortador-unhas:hover, .caixa-invisivel__caixa-areia:hover, .caixa-invisivel__caminha:hover, .caixa-invisivel__arranhador:hover, .caixa-invisivel__caixa-transporte:hover {
-    background-color: rgba(219, 226, 219, 0.541);
-}
-
-/* mais recomendados-passaros */
-
-.mais-procurados-passaros h1 {
-    position: relative;
-    left: 280px;
-    height: 100px;
-    max-width: 700px;
-    font-size: var(--font-size-h1);
-    color: #000000;
-}
-
-.fotos__mais-procurados-passaros {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 0 200px;
-    height: 300px;
-}
-
 /* ------------- */
 
 .gaiola {
@@ -1041,39 +923,6 @@ body {
     background-size: 250px 200px;
     background-repeat: no-repeat;
     transition: 500ms;
-}
-
-.gaiola:hover, .ninho:hover, .bebedouro:hover, .brinquedo-passaro:hover, .racao-passaro:hover {
-    transform: scale(1.1);
-}
-
- .gaiola a, .ninho a, .bebedouro a, .brinquedo-passaro a, .racao-passaro a {
-   visibility: hidden;
-   text-decoration: none;
-   color: #000000;
-   font-size: 2em;
-   transition: 200ms;
-   position: relative;
-   top: 80px;
-}
-
-.gaiola:hover a, .ninho:hover a, .bebedouro:hover a, .brinquedo-passaro:hover a, .racao-passaro:hover a {
-    visibility: visible;
-}
-
-.caixa-invisivel__gaiola, .caixa-invisivel__ninho, .caixa-invisivel__bebedouro, .caixa-invisivel__brinquedo-passaro, .caixa-invisivel__racao-passaro {
-    position: relative;
-    height: 200px;
-    width: 200px;
-    border-radius: 25px;
-    border: none;
-    left: -6px;
-    top: -1px;
-    transition: 500ms;
-}
-
- .caixa-invisivel__gaiola:hover, .caixa-invisivel__ninho:hover, .caixa-invisivel__bebedouro:hover, .caixa-invisivel__brinquedo-passaro:hover, .caixa-invisivel__racao-passaro:hover {
-    background-color: rgba(219, 226, 219, 0.541);
 }
 
 
@@ -1374,7 +1223,7 @@ footer a {
     font-size: 1.5em;
 }
 
-footer a:hover {
+.institucional a:hover, .atendimento a:hover, .politica a:hover {
     color: var(--link-rodape-color-hover);
     border-bottom: var(--underline);
 }
@@ -1428,76 +1277,6 @@ footer a:hover {
     font-weight: bold;
 }
 
-.app__redes-sociais {
-    position: relative;
-    background-color: whitesmoke;
-    max-width: 21vw;
-    height: 330px;
-    margin-left: 1350px;
-    bottom: 100px;
-    border-radius: 70px;
-}
-
-.app__redes-sociais h3 {
-    position: relative;
-    text-align: center;
-    top: 15px;
-    font-size: var(--font-size-h3);
-}
-
-.qr-code {
-    position: relative;
-    height: 120px;
-    left: 50px;
-    top: 40px;
-}
-
-.app {
-    position:relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    bottom: 125px;
-    margin-top: 35px;
-    gap: 10px;
-    right: 40px;
-}
-
-.appStore {
-    background-image: url(imagens/redes-sociais/apple.png);
-    height: 65px;
-    width: 170px;
-    background-repeat: no-repeat;
-    background-size: 185px 72px;
-    background-position: center;
-    border-radius: 15px;
-    position: relative;
-}
-
-
-.googlePlay {
-    background-image: url(imagens/redes-sociais/googlePlay.png);
-    height: 65px;
-    width: 170px;
-    background-repeat: no-repeat;
-    background-size: 168px 83px;
-    background-position: center;
-    border-radius: 15px;
-    position: relative;
-}
-
-.redesSociais {
-    position: relative;
-    bottom: 130px;
-}
-
-.redesSociais h3 {
-    position: relative;
-    text-align: center;
-    height: 50px;
-    font-size: var(--font-size-h3);
-}
-
 .facebook {
     background-image: url(imagens/redes-sociais/facebook.png);
     background-repeat: none;
@@ -1523,16 +1302,29 @@ footer a:hover {
 }
 
 .redesSociais button {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50px;
     border: none;
+    transition: 500ms;
 }
 
-.botoes__redes-sociais {
+.redesSociais {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    flex-direction: column;
+    position: relative;
+    left: 1700px;
+    width: 50px;
+    bottom: 90px;
+    gap: 12px;
+}
+
+.redesSociais button:hover {
+    transform: scale(1.1);
+}
+
+.redesSociais a:hover {
+    text-decoration: none;
 }
 
 
