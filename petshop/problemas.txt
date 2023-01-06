@@ -1,2 +1,0 @@
--carousel
--conteúdo da página contato por cima do menu dropdown
