@@ -1310,6 +1310,13 @@ body {
     right: 7px;
 }
 
+.subtitulo-hospedagem:before {
+    content: url(imagens/icones/icone-creche.png);
+    top: 13px;
+    position: relative;
+    right: 7px;
+}
+
 .agendar-servico {
     height: 50px;
     width: 250px;
