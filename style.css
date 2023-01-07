@@ -1205,8 +1205,20 @@ body {
 
 /* SERVICOS */
 
-.banho, .tosa, .castracao, .consulta, .vacina, .passeio, .hospedagem, .creche {
+.banho, .tosa {
     height: 1400px;
+    width: 1380px;
+    padding-left: 550px;
+}
+
+.castracao, .consulta {
+    height: 1350px;
+    width: 1380px;
+    padding-left: 550px;
+}
+
+.vacina, .passeio, .hospedagem, .creche {
+    height: 1500px;
     width: 1380px;
     padding-left: 550px;
 }
@@ -1310,7 +1322,7 @@ body {
     right: 7px;
 }
 
-.subtitulo-hospedagem:before {
+.subtitulo-creche:before {
     content: url(imagens/icones/icone-creche.png);
     top: 13px;
     position: relative;
