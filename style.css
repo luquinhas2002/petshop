@@ -1254,7 +1254,7 @@ body {
     top: 40px;
 }
 
-.gato-banho-float, .cachorro-tosa-float, .cachorro-castracao-float, .cachorro-consulta-float, .gato-vacina-float, .cachorro-passeio-float, .cachorro-hospedagem-float {
+.gato-banho-float, .cachorro-tosa-float, .cachorro-castracao-float, .cachorro-consulta-float, .gato-vacina-float, .cachorro-passeio-float, .cachorro-hospedagem-float, .cachorro-creche-float {
     float: left;
     padding: 20px 20px 20px 0;
     position: relative;
@@ -1359,6 +1359,49 @@ body {
     top: 4px;
     right: 6px;  
 }
+
+
+/* AGENDAMENTO */
+
+.agendamento {
+    position: relative;
+    width: 1380px;
+    height: 1300px;
+    padding-left: 550px;
+}
+
+.agendamento h1 {
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 30px;
+    position: relative;
+    left: -180px;
+    padding-bottom: 0px;
+}
+
+.agendamento hr {
+    position: relative;
+    bottom: 0px;
+    left: -180px;
+    width: 940px;
+}
+
+.agendamento h2 {
+    font-size: 23px;
+    font-weight: 600;
+    position: relative;
+    right: 80px;
+    top: 40px;
+}
+
+.agendamento select {
+    position: relative;
+    padding: 10px 100px;
+    text-align: center; 
+    top: 60px; 
+    right: 75px;
+}
+
 
 /* RODAPÉ */
 
