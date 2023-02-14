@@ -6,7 +6,7 @@
     --link-color-hover: black;
     --link-rodape-color-hover: rgb(0, 0, 0);
     --geral: rgb(250, 184, 62);
-    --itens-iniciais-hover: rgb(211, 167, 34);
+    --itens-iniciais-hover: rgb(255, 205, 56);
     --font-size-h1: 2.2em;
     --font-size-h3: 1.8em;
     --underline: 1.5px black solid;
@@ -1197,11 +1197,11 @@ body {
     border-bottom: var(--geral) 3px solid;
 }
 
-
 .input-cadastro:focus, .input-endereco:focus, .input-senha:focus, .input-contato:focus, .input-login:focus {
     box-shadow: 0;
     outline: 0;
 }
+
 
 /* SERVICOS */
 
@@ -1366,7 +1366,7 @@ body {
 .agendamento {
     position: relative;
     width: 1380px;
-    height: 1300px;
+    height: 1100px;
     padding-left: 550px;
 }
 
@@ -1386,22 +1386,97 @@ body {
     width: 940px;
 }
 
-.agendamento h2 {
+.tipo-servico, .horarios-titulo {
     font-size: 23px;
     font-weight: 600;
     position: relative;
-    right: 80px;
+    right: 70px;
     top: 40px;
+    padding-bottom: 10px;
 }
 
 .agendamento select {
     position: relative;
-    padding: 10px 100px;
-    text-align: center; 
+    width: 600px;
+    height: 45px;
+    text-align: start;
+    border-radius: 25px;
     top: 60px; 
     right: 75px;
+    font-weight: 400;
+    padding-left: 15px;
 }
 
+.horarios-titulo {
+    top: 90px;
+    position: relative;
+    right: 60px;
+}
+
+.botoes-horarios {
+    position: relative;
+    display: grid;
+    top: 150px;
+    right: 95px;
+    grid-template-columns: repeat(6, 120px);
+    grid-template-rows: repeat(8, 1fr);
+    row-gap: 25px;
+    text-align: center;
+    justify-items: center;
+}
+
+.dia {
+    grid-row: 1; 
+    padding-top: 15px;
+}
+
+.botao-dia-nove-horas {
+    grid-row: 2;
+}
+
+.botao-dia-dez-horas {
+    grid-row: 3;
+}
+
+.botao-dia-onze-horas {
+    grid-row: 4;
+}
+
+.botao-dia-treze-horas {
+    grid-row: 5;
+}
+
+.botao-dia-quatorze-horas {
+    grid-row: 6;
+}
+
+.botao-dia-quinze-horas {
+    grid-row: 7;
+}
+
+.botao-dia-dezesseis-horas {
+    grid-row: 8;
+}
+
+.botao-dia-nove-horas, .botao-dia-dez-horas, .botao-dia-onze-horas, .botao-dia-treze-horas, .botao-dia-quatorze-horas, .botao-dia-quinze-horas, .botao-dia-dezesseis-horas {
+    height: 45px;
+    width: 80px;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--geral);
+}
+
+.botao-dia-nove-horas:hover, .botao-dia-dez-horas:hover, .botao-dia-onze-horas:hover, .botao-dia-treze-horas:hover, .botao-dia-quatorze-horas:hover, .botao-dia-quinze-horas:hover, .botao-dia-dezesseis-horas:hover {
+    transform: scale(1.1);
+    transition: 500ms;
+    background-color: var( --itens-iniciais-hover);
+}
+
+.agendamento .agendar-servico {
+    position: relative;
+    top: 210px;
+    left: 130px;
+}
 
 /* RODAPÉ */
 
